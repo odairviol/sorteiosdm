@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:screenOrientation="portrait"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/reiniciarButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="reiniciar"
+            android:text="@string/voltar" />
+
+        <Button
+            android:id="@+id/sortearButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="sortear"
+            android:text="@string/sortear" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/qtdTextView"
+        android:layout_width="match_parent"
+        android:layout_height="47dp"
+        android:gravity="center"
+        android:text="@string/numeros_sorteados"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/sorteadosTextView"
+        android:layout_width="match_parent"
+        android:layout_height="133dp"
+        android:gravity="fill_horizontal|center|fill"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/sorteadoTextView"
+        android:layout_width="match_parent"
+        android:layout_height="217dp"
+        android:gravity="center"
+        android:textSize="80sp"
+        android:textStyle="bold" />
+</LinearLayout>
